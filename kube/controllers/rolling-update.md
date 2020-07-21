@@ -16,6 +16,8 @@
 	kubectl get svc kubeserve-svc -o wide 
 	kubectl get ep kubeserve-svc 
 ```
+example: while true; do curl http://35.178.28.228:30442; sleep 1; done;
+
 
 ## Step2: edit the deployment yml file & Update the version 'v2' to perform rolling update
 
