@@ -64,4 +64,6 @@ Certificate Signing:
 
 		 /opt/puppetlabs/bin/puppet cert sign --all
 		 
+		 On Agnet for test : root@ip-172-31-19-127:/opt/puppetlabs/bin# ./puppet agent --test
+		 
 		Version :   dpkg -l | grep puppet
