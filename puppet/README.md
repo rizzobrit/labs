@@ -58,6 +58,35 @@ calss myclass {
 }
 ```
 
+----------------------------------------------------------------
+Write the class group of tasks and then below call class
+class myclass {
+        # execute 'apt-get update'
+        exec { 'apt-update':                    # exec resource named 'apt-update'
+                command => '/usr/bin/apt-get update'  # command this resource will run
+        }
+
+        package { 'nginx':
+                require => Exec['apt-update'],        # require 'apt-update' before installing
+                ensure => installed,
+        }
+
+        # ensure sshd service is running
+        service { 'sshd':
+                ensure => running,
+        }
+}
+
+
+file {'/tmp/mydevops':
+  ensure => present,
+}
+service{ 'cron':
+  ensure => running,
+}
+
+class{'myclass':}
+
 
 > Manifests are files with extension ".pp" will be created under /etc/puppet/manifests directory at the puppet master end, where we declare all the resources types status to be managed
 
