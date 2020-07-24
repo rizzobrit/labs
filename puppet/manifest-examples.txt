@@ -6,6 +6,8 @@ on master node
 
 site.pp is default manifest name can be use. 
 
+node 'ip-172-31-16-37'{     # if you want to run on just this one node and if all then node @'default' {
+
 =======================================================================================
 
 Syntax to Write puppet resources inside manifests. 
