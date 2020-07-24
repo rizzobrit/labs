@@ -157,7 +157,7 @@ puppet module search nano
 puppet module list
 puppet module install nano
 
-/opt/puppetlabs/bin/puppet module generate naresh-tomcat 
+/opt/puppetlabs/bin/puppet module generate naresh-tomcat     # it is to generate MOdules and below is the init.pp where the code is 
 /opt/puppetlabs/bin/puppet apply --modulepath=<path> <modulename>/tests/init.pp --noop 
 ```
 
