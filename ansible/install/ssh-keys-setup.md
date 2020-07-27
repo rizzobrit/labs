@@ -11,6 +11,21 @@
 ```
 	1) switch to user ( su - ansible )
 	2) run "ssh-keygen" command as user ( this will genereate ssh keys for the user ) 
+	#ansible@ip-172-31-43-67://usr/bin$ run ssh-keygen
+	#
+	#
+	ansible@ip-172-31-43-67://usr/bin$ ./ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ansible/.ssh/id_rsa):
+Created directory '/home/ansible/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/ansible/.ssh/id_rsa.
+Your public key has been saved in /home/ansible/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:ICqrL28qFnactd/ibAC06V3gjOsem1+6/pWLigHYZbw ansible@ip-172-31-43-67
+The key's randomart image is:
+
 ```
 
 ### copy user ssh keys from ansible contrller to all target hosts
