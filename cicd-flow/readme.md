@@ -95,7 +95,7 @@ install all these from Jenkins UI )
 ### Step11 -- `Create Credentials (Setup these from Jenkins UI)`
 
 ```
-  Jenkins ( main/home page ) ==> Credentials ==> global ==> Add Credentials 
+  Jenkins ( main/home page ) ==> Credentials ==> manage Credentails ==> Add Credentials 
 	--> kind: secret text 
 	--> scope: Global 
 	--> Secret: <enter your docker hub password> 
