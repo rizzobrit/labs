@@ -62,7 +62,7 @@
 ### Step8 -- `Setup Ansible Inventory on Jenkins machine`
 
 ```
-   vi /tmp/inv 
+   vi /tmp/inv or try /etc/ansible# vi hosts
    enter your servers in gruops called qa & prod 
    ( look at the sample inventory file under https://github.com/lerndevops/samplejavaapp/tree/master/deploy )
    ensure to put only manager IPs in inventory file -- DO NOT PUT NODE IPs
