@@ -4,7 +4,7 @@
     - ec2:
         key_name: devops
         instance_type: t2.micro
-        image: ami-05c1fa8df71875112 
+        image: ami-0fcd59d3cb78c1125 
         wait: yes
         group: mysecgroup
         count: "{{ count }}"
@@ -48,7 +48,7 @@
           - git
 #          - python
     - name: clone git repo
-      shell: git clone https://github.com/lerndevops/labs.git
+      shell: git clone https://github.com/rizzobrit/labs.git
       args:
         chdir: /tmp
     - name: create user
