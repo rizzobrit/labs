@@ -3,7 +3,7 @@ create a user account & allow the user EC2 full access
     also get ==>  Access key
 				  secret access key
 
-on your ansible controller 
+on your ansible controller ### try this link for commands    https://linuxhint.com/install_aws_cli_ubuntu/
 
 	Install awscli
 		easy_install pip
