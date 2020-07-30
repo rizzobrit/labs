@@ -31,13 +31,13 @@ ansible playbook to procure an ec2 instance
     - ec2:
         key_name: test
         instance_type: t2.micro
-        image: ami-0f65671a86f061fcd
+        image: ami-003a2ad06ff767541
         wait: yes
         group: mysecgroup
         count: 1
-        vpc_subnet_id: subnet-c33c268e
+        vpc_subnet_id: subnet-07f28c6e
         assign_public_ip: yes
-        region: us-east-2
+        region: eu-west-2
       register: out
 
     - debug:
