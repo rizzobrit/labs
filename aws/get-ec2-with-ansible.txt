@@ -63,8 +63,4 @@ ansible playbook to procure an ec2 instance
         dest: /tmp/ec2-inventory
       delegate_to: localhost
       
-      #test
 
-#AKIAT6EXZ3OGQ3NJLEOX
-
-#O1d8IshZYcQHFUQ6UCAAW1XUPEZjFBLk/QM4/srq
