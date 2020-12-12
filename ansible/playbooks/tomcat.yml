@@ -21,7 +21,7 @@
    - name: Download Tomcat
       #  get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.53/bin/apache-tomcat-8.5.53.tar.gz dest=/opt/apache-tomcat-8.5.53.tar.gz
      copy: 
-      src: /tmp/apache-tomcat-8.5.53.tar.gz 
+      src: /tmp/apache-tomcat-8.5.53.tar.gz   #wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.53/bin/apache-tomcat-8.5.53.tar.gz (need it pre-downloaded to Controller)
       dest: /opt
    - name: Extract archive
      shell: /bin/tar xvf /opt/apache-tomcat-8.5.53.tar.gz -C /opt/ 
@@ -40,7 +40,7 @@
        recurse: yes
    - name: Install Tomcat init script
      copy: 
-       src: /tmp/tomcat-initscript.sh 
+       src: /tmp/tomcat-initscript.sh     #https://github.com/ansible/ansible-examples/blob/master/tomcat-standalone/roles/tomcat/files/tomcat-initscript.sh  (need it pre-downloaded to Controller)
        dest: /etc/init.d/tomcatd 
        mode: 0755
    - name: enable service
